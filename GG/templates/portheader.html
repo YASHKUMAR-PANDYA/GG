@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta property="og:title">
+        <meta property="og:description">
+        <meta property="og:url">
+        <meta property="og:image">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}">
+
+        <link rel="icon" type="text/icon" href="{% static 'Images/portfolio/logo.jpg' %}">
+
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/Jquery.js' %}"></script>
+        <script src="{% static 'Js/jquery.bvalidator.min.js' %}"></script>
+        <script src="{% static 'Js/orange.js' %}"></script>
+        <script src="{% static 'Js/default.min.js' %}"></script>
+
+        <script type="text/javascript">
+
+            $("document").ready(function(){
+                $("#amade").bValidator();
+                $("#emade").bValidator();
+                $("#feed").bValidator();
+            })
+
+        </script>
+        
+    </head>
+    <body>
+
+        <section class="main">
+            <!--header starts here-->
+            <div class="header" >
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="col-md-3 col-xs-12">
+                                <div id="logo">
+                                    <img src="{% static 'IMAGES/portfolio/Nathaniel Rackowe Art Catalogue.jpg' %}">
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-6 col-xs-12">
+                                <div id="title">
+                                    <b>Portfolio : {{ user.first_name }}</b>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-12">
+                                <div id="searchbox">
+                                    <input type="text" placeholder="Search here --!" max-length="40" class="form-control span2 search-query">
+                                    <button class="form-control button">Search</button>
+                                </div> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header ends here-->
+            <div class="clearfix"></div>
+            <!--navigation starts here-->
+            <nav class="navbar">
+                <ul>
+                    <li><a  href="{% url 'portfolio' %}">Portfolio</a></li>
+                    <li><a href="{% url 'index' %}">Public platform</a></li>
+                    <li><a href="{% url 'announce' %}">Make announcement</a></li>
+                    <li><a href="{% url 'event' %}">Create Event</a></li>
+                    <li><a href="{% url 'feed' %}">Feedback</a></li>
+                    <li><a href="{% url 'userlogout' %}" onclick="return confirm('Confirm logout?')">Log out<span class="fa fa-power-off"></span></a></li>
+                </ul>
+            </nav>
+            <!--navigation ends here-->
+            <div class="clearfix"></div>
+            <br><br>
+    </body>
+</html>
+{% block body %}
+{% endblock %}

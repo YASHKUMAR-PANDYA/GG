@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Activity</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta property="og:title" content="Activity">
+        <meta property="og:description" content="See the activites of the GECR here">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="#">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/activity.css' %}">
+
+
+        <script src="{% static 'JS/jquery.js' %}"></script>
+        <script src="{% static 'JS/cycle.min.js' %}"></script>
+        <script src="{% static 'JS/bootstrap.min.js' %}"></script>
+        <link rel="icon" type="text/icon" href="{% static 'images/activity/activity icon.jpg' %}">
+    </head>
+    {% block body %}
+    <body>
+    
+    <section class="main">
+    <!--header starts here-->
+        <div class="header">
+            <br>
+        <h1 align="center">Activities</h1>  
+        
+        <hr style="Background-image:url('images/Orange.jpg'); width:60%;border:solid 2px purple;">
+        </div>
+    <div class="clearfix"></div>
+    <!--header ends here-->
+
+    <!--navbar starts here-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'about' %}"  style="color:yellowgreen;"><span style="color:blueviolet; letter-spacing:2px; font-size:20px;">GECR:</span><span style="color:red; letter-spacing:2px; font-size:16px;">The place of</span><span style="color:blueviolet; letter-spacing:2px; font-size:16px;">&nbsp;Purpose</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'index' %}" style="color:yellowgreen;"><span class="fa fa-institution">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">HUB</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'activity' %}" class="active"style="color:yellowgreen;"><span class="fa fa-suitcase">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Activity</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-hand-o-right">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Trends</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="dropdown"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color:yellowgreen;"><span class="fa fa-film"></span>&nbsp;&nbsp;<span style="color:blueviolet; letter-spacing:1px; font-size:20px;" >Events</span><span class="fa fa-angle-double-down" style="color:yellowgreen;"></span></a>
+                <ul class="dropdown-menu"style="background-image:linear-gradient(to bottom left, yellowgreen, white);">
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Technical Events</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Non-Technical Events</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Public Gatherings</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Meetings</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Schedule</a></li>
+                </ul>
+            
+                
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-tasks">&nbsp;&nbsp;</span><span style="color:blueviolet; font-size:20px; letter-spacing:1px;">FAQs</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+       </ul><br>
+    </nav> 
+    <!--navbar ends here-->
+    <!--thumbnail starts here-->
+    <br><br><br><br><br><br><br><br><br>
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+
+    <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+        <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+        <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+            <center>
+                <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+            </center>
+        </address>
+    </div>
+    <!--thumbnails ends here-->
+
+    <!--navbar starts here-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'about' %}" style="color:yellowgreen;"><span style="color:blueviolet; letter-spacing:2px; font-size:20px;">GECR:</span><span style="color:red; letter-spacing:2px; font-size:16px;">The place of</span><span style="color:blueviolet; letter-spacing:2px; font-size:16px;">&nbsp;Purpose</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'index' %}" style="color:yellowgreen;"><span class="fa fa-institution">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">HUB</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'activity' %}" class="active" style="color:yellowgreen;"><span class="fa fa-suitcase">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Activity</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-hand-o-right">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Trends</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="dropup"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color:yellowgreen;"><span class="fa fa-film"></span>&nbsp;&nbsp;<span style="color:blueviolet; letter-spacing:1px; font-size:20px;" >Events</span><span class="fa fa-angle-double-up" style="color:yellowgreen;"></span></a>
+                <ul class="dropdown-menu" style="background-image:linear-gradient(to bottom left, yellowgreen, white);">
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Technical Events</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Non-Technical Events</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Public Gatherings</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Meetings</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Schedule</a></li>
+                </ul>
+            
+                
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-tasks">&nbsp;&nbsp;</span><span style="color:blueviolet; font-size:20px; letter-spacing:1px;">FAQs</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+       </ul>
+    </nav> 
+    </section>
+    
+    </body>
+</html>
+{% endblock %}

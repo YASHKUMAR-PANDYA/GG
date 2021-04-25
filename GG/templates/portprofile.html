@@ -1,0 +1,126 @@
+<!Doctype html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guest Registration</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta property="og:title" content="Guest registration">
+        <meta property="og:description" content="Non-entities of the gecr can register from here">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="#">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/updtportfolio.css' %}"> 
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/blue.css' %}">
+        <link rel="icon" type="text/icon" media="screen" href="{% static 'Images/portfolio/logo.jpg' %}">
+
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'Js/Jquery.js' %}"></script>
+        <script src="{% static 'Js/jquery.bvalidator.min.js' %}"></script>
+        <script src="{% static 'Js/blue.js' %}"></script>
+        <script src="{% static 'Js/default.min.js' %}"></script>
+
+
+        <script type="text/javascript">
+            $("document").ready(function(){
+                $("#ufrm").bValidator();
+            });
+        </script>
+         <!-- onclick the message should pop up -->
+        
+
+       
+        
+    </head> 
+    {% block body %}
+
+    <body>
+        
+        
+        
+        
+        <!--loader code ends here-->
+        <section class="main">
+        <div id="part">
+            <form method="POST" id="ufrm" action="#" >
+                {% csrf_token %}
+                <div class="form-group">             
+                <center>
+                    <br>
+                    <h4 align="center" style="color:blue; font-weight:800;">Profile Details</h4>
+                    
+                        &nbsp;<span class="fa fa-envelope" style="color:blue; font-size:25px;"></span>
+                    
+                    <input type="text" name="reml" placeholder="{{ user.username }}"  maxlength="45" data-bvalidator="required,email"><br><br>
+
+                    
+
+                    
+                    <!-- <span class="fa fa-key"  style="color:blue;font-size:25px;"></span>
+                    <input type="password" name="rpcd" maxlength="25" placeholder="passcode" data-bvalidator="required,minlen[5],maxlen[15]"><br><br>
+                         -->
+                    <!-- <div id="reginput">
+                        <span class="fa fa-key"  style="color:blue;font-size:25px;"></span>
+                        <input type="password" name="cpcd" maxlength="25" placeholder="confirm passcode" data-bvalidator="required,minlen[5],maxlen[15]"><br><span style="color:blue; font-size:25px;float:left;"></span><br>
+                    </div> -->
+
+                   
+
+                    
+                    <span class="fa fa-user-circle" style="color:blue;font-size:25px;"></span>
+                    <input type="text" name="rfnm" placeholder="{{ user.first_name }}" maxlength="25" data-bvalidator="required,alpha"><br><br>
+                    
+                    
+                    
+                    <span class="fa fa-user-circle"  style="color:blue;font-size:25px;"></span>
+                    <input type="text" name="rlnm" placeholder="{{ user.last_name }}" maxlength="25" data-bvalidator="required,alpha"><br><br>
+                    
+
+                    <!-- <div id="reginput">
+                        <span class="fa fa-info" style="color:blue;font-size:25px;"></span>
+                        <input type="text" name="unm" placeholder="username" maxlength="25" data-bvalidator="required,alpha"><br><br>
+                    </div> -->
+
+                    
+                    <span class="fa fa-tablet" style="color:blue;font-size:25px;"></span>
+                    <input type="text" name="rmob" placeholder="{{ signup.contact }}" maxlength="25" data-bvalidator="required,minlen[7],maxlen[10],digit"><br><br>
+                
+
+                
+                    <!-- <label class="col-form-label" style="font-weight:600; color:blue; font-size:18px;">Are you?</label><br> -->
+                    <select name="rop" placeholder="role" data-bvalidator="required">
+                        <option value="">Are you?</option>
+                        <option value="student">Student</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="guest">Guest</option>
+                
+                    </select><br><br>
+                    
+                    <input class="btn btn-primary" type="submit" value="Update" style="Background-color:blue; color:white; width:125px; height:50px; border:none; font-size:20px;">
+                    
+               
+
+                </center>
+                </div>
+            </form>
+        </div>
+        </section>
+    </body>
+    {% ifequal error "no" %}
+        <script type="text/javascript">
+            alert('Details have been updated successfully!');
+            window.location=('{% url "portfolio" %}');
+        </script>
+    {% endifequal %}
+    {% ifequal error "yes" %}
+        <script type="text/javascript">
+            alert('Something went wrong, please try again!');
+            window.location=('{% url "portprofile" %}');
+        </script>
+    {% endifequal %}
+
+</html>
+{% endblock %}

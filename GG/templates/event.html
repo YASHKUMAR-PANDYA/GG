@@ -1,0 +1,45 @@
+{% extends 'portheader.html' %}{% block body %}{% load static %}
+            {% ifequal error no %}
+                <script type="text/javascript">
+                    alert("Event has been created succesfully")
+                    window.location="{% url 'portfolio' %}"
+                </script>
+            {% endifequal %}
+            {% ifequal error yes %}
+                <script type="text/javascript"> 
+                    alert("Something went wrong, plz create event again")
+                    window.html="{% url 'event' %}"
+                </script>
+            {% endifequal %}
+            
+            <h1 align=center style="color:whitesmoke; font-weight:600;" >--Create Events here--</h1>
+            
+            <!--scrolling division starts here-->
+            <div class="scroll">
+                <form method="POST" id="emade" action=#>
+                    {% csrf_token %}
+                    <div class=form-group>
+                        <label>{{title}}</label>
+                        <input type="text" name="date" placeholder="Date" class="form-control" maxlength=20 data-bvalidator="required"><br><br>
+                        <input type="text" name="time" placeholder="Time" class="form-control" maxlength=20 data-bvalidator="required"><br><br>
+                        <input type="text" name="venue" placeholder="venue" class="form-control" maxlength=100 data-bvalidator="required"><br><br>
+                        <textarea class="form-control" type=text name="evt" placeholder="Event Details"  data-bvalidator="required" style="height:80px;"></textarea><br><br>
+                        <textarea class="form-control" type=text name="eping" placeholder="Ping(Url)"   ></textarea><br><br>
+                        <input class="form-control" type=submit value="@Yes!" style="color:white; background-color:black; font-weight:600;">
+                    </div>
+                </form>
+            </div>
+            <!--scrolling division ends here-->
+            <div class="clearfix"></div>
+            <br><br>
+
+           {% include 'portfooter.html' %}
+
+           
+
+
+        </section>
+    </body>
+   
+</html>
+{% endblock %}

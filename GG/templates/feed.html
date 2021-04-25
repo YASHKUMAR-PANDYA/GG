@@ -1,0 +1,40 @@
+{% extends 'portheader.html' %}{% block body %}{% load static %}
+            {% ifequal error "no" %}
+            <script type=text/javascript>
+                alert("Feedback has been given succesfully");
+                window.location=("{% url 'portfolio' %}");
+            </script>
+            {% endifequal %}
+            {% ifequal error "yes" %}
+            <script type="text/javascript">
+                alert("Something went wrong, plz try again");
+                window.location=("{% url 'feed' %}")
+            </script>
+            {% endifequal %}
+            
+            <!--scrolling division starts here-->
+            <div class="scroll">
+                <h1 style="color:whitesmoke; font-weight:600;" >--Feedack form--</h1>
+                <form method="POST" id="feed" action=#>
+                    {% csrf_token %}
+                    <div class=form-group>
+                        <label></label>
+                        <textarea class="form-control" type=text name=feed placeholder="Give your Feedback here-!!" data-bvalidator="required" style="height:180px;"></textarea><br><br><br><br>
+                        <input class="form-control" type=submit value="@Yes!" style="color:white; background-color:black; font-weight:600; ">
+                    </div>
+                </form>
+            </div>
+            <!--scrolling division ends here-->
+            <div class="clearfix"></div>
+            <br><br>
+
+           {% include 'portfooter.html' %}
+
+           
+
+
+        </section>
+    </body>
+   
+</html>
+{% endblock %}

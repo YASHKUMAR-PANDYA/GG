@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='zxx'> 
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>GECR GLIMPSE</title>
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta property="og:title" content="GECR GLIMPSE">
+        <meta property="og:description" content="Dynamic platform of the GECR entities that provides them features to interact with each other">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="#">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/cssindex.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/orange.css' %}">
+        
+
+        <link rel="icon" type="text/icon" media="screen" href="{% static 'IMAGES/gec rajkot logo.jpg' %}" >
+
+        <script src="{% static 'JS/jquery.js' %}"></script>
+        <script src="{% static 'JS/cycle.min.js' %}"></script>
+        <script src="{% static 'Js/jquery.bvalidator.min.js' %}"></script>
+        <script src="{% static 'Js/orange.js' %}"></script>
+        <script src="{% static 'Js/default.min.js' %}"></script>
+
+        <script type="text/javascript">
+            $("document").ready(function(){
+                $("#lfrm").bValidator();
+            });
+        </script>
+        
+
+        <script type="text/javascript">
+            $('document').ready(function(){
+                $('.slider').cycle('zoom')
+            });
+            
+        </script>
+
+        <script src="{% static 'JS/bootstrap.min.js' %}"></script>
+
+        
+    </head>
+    <body>
+        
+        <!--header starts here-->
+        <div class="header ">
+            <div class="container-fluid">
+                <div clas="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="col-md-3 col-xs-12">
+                            <div id="logo">
+                                <img src="{% static 'IMAGES/gec rajkot logo.jpg' %}">
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-xs-12">
+                            <div id="search-box">
+                                <form method="POST">
+                                    <div class="form-group">
+                                        <input type="text" name="search-box" class="form-control" placeholder="Search here --!">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div id="logreg">
+                            <b>
+                                <a href="#" id="lr" data-toggle="modal" data-target="#acc" style="color:rgb(0, 0, 129);"><span class="fa fa-user"></span>&nbsp;Login/Register</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--header ends here-->
+        <div class="clearfix"></div>
+         <!--navigation starts here-->
+         
+    </body>
+</html>
+{% block body %}
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'portheader.html' %}{% block body %}{% load static %}
+
+            <!--profile card starts here-->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/purple_rays.jpg' %}" alt="Username Initials">
+                <div class="card-body">
+                    <h3 class="card-title">{{ user.first_name }}</h3>
+                    <p class="card-text">{{ user.last_name }}</p>
+                    <a href="{% url 'portprofile' %}" class="btn btn-primary stretched-link" >See profile Details</a>
+                </div>
+            </div>
+            <!--profile card ends here-->
+            
+            <!--scrolling division starts here-->
+            <div class="scroll">
+                <h1 style="color:whitesmoke; font-weight:600;" >Announcements</h1>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+                <div id="announcement">
+                    <button class="btn btn-primary">Check</button>
+                </div>
+            </div>
+            <!--scrolling division ends here-->
+            <div class="clearfix"></div>
+            <br><br>
+
+           {% include 'portfooter.html' %}
+
+           
+
+
+        </section>
+    </body>
+   
+</html>
+{% endblock %}

@@ -1,0 +1,271 @@
+{% extends 'header.html' %}{% block body %}{% load static %}
+<div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'about' %}" style="color:yellowgreen;"><span style="color:blueviolet; letter-spacing:2px; font-size:20px;">GECR:</span><span style="color:red; letter-spacing:2px; font-size:16px;">The place of</span><span style="color:blueviolet; letter-spacing:2px; font-size:16px;">&nbsp;Purpose</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'index' %}" class="active" style="color:yellowgreen;"><span class="fa fa-institution">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">HUB</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'activity' %}" style="color:yellowgreen;"><span class="fa fa-suitcase">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Activity</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-hand-o-right">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Trends</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="dropdown"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color:yellowgreen;"><span class="fa fa-film"></span>&nbsp;&nbsp;<span style="color:blueviolet; letter-spacing:1px; font-size:20px;" >Events</span><span class="fa fa-angle-double-down" style="color:yellowgreen;"></span></a>
+                <ul class="dropdown-menu" style="background-image:linear-gradient(to bottom left, yellowgreen, white);">
+                    <li><a  style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Technical Events</a></li>
+                    <li><a  style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Non-Technical Events</a></li>
+                    <li><a  style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Public Gatherings</a></li>
+                    <li><a  style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Meetings</a></li>
+                    <li><a  style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Schedule</a></li>
+                </ul>
+            
+                
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-tasks">&nbsp;&nbsp;</span><span style="color:blueviolet; font-size:20px; letter-spacing:1px;">FAQs</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+       </ul>
+    </nav>   
+    </div>     
+    <!--navigation ends here-->
+    <div class="clearfix"></div><br>
+   
+    <!--slider starts here-->
+    <div class="slider">
+        
+                <img src="{% static 'IMAGES/aa.jpg' %}">
+                <img src="{% static 'Images/Top view.jpeg' %}">
+                <img src="{% static 'Images/Audi.jpg' %}">
+                <img src="{% static 'IMAGES/EC.jpg' %}">
+                <img src="{% static 'IMAGES/Workshop.jpg' %}">
+                <img src="{% static 'IMAGES/aa.jpg' %}">
+           
+        
+    </div>
+    <!--slider ends here-->
+   <div class="clearfix"></div>
+    <br>
+        <!--content starts here-->
+        
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row" >
+                    <div class="col-md-12 col-xs-12">
+                        
+                        <!--streams start here-->
+                        <div class="col-md-10 col-xs-12 col-md-offset-1 ">
+                            <div class="panel panel-default" id="stream">
+                                <div class="panel panel-header" style="background-image:url('Images/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image'); background-size:cover; background-repeat:no-repeat; border:inset 1px yellowgreen">
+                                    <h3 align="center" style="color:blueviolet; font-weight:800;" >Explore the streams to be pursued</h3>
+                                </div>
+
+                                <div class="panel panel-body" >
+                                    
+                                    <div class="col-md-4 col-xs-12">
+                                        <span class="fa fa-desktop" style="font-size:120px; background-image:url('IMAGES/Golden.jpg'); background-size:cover;background-repeat:no-repeat; "></span><br>
+                                        <a href="#" style="color:blueviolet;"><span style="font-size:25px; letter-spacing:1px; font-weight:600; ">Computer <br>Engineering</span></a>
+                                    </div>
+
+                                    <div class="col-md-4 col-xs-12">
+                                        <span class="fa fa-gears" style="font-size:120px; background-image:url('IMAGES/Golden.jpg'); background-size:cover;background-repeat:no-repeat; "></span><br>
+                                        <a href="#" style="color:blueviolet"><span style="font-size:25px;letter-spacing:1px; font-weight:600;">Mechanical <br>Engineering</span></a><br><br>
+                                    </div>
+
+                                    <div class="col-md-4 col-xs-12">
+                                        <div id="auto">
+                                            <img src="{% static 'Images/racing-car.png' %}"><br><br><br><br><br><br>
+                                            <a href="#" style="color:blueviolet;"><span style="font-size:25px;letter-spacing:1px;font-weight:600;">Automobile <br>Engineering</span></a>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+                    </div>
+                </div>
+                <!--making another row because of the grid misfunction for 6 divisions-->
+                <div class="row ">
+                    <div class="col-md-12 col-xs-12">
+                        
+                       
+                        <div class="col-md-10 col-xs-12 col-md-offset-1">
+                            <div class="panel panel-default" id="stream2">
+
+                                <div class="panel panel-body" >
+                                    <div class="col-md-4 col-xs-12">
+                                        <div id="electrical">
+                                            <img src="{% static 'IMAGES/solar-energy.png' %}" ><br><br><br><br><br><br>
+                                            <a href="#" style="color:blueviolet;"><span style="font-size:25px; letter-spacing:1px; font-weight:600;">Electrical <br>Engineering</span></a>
+                                        </div>
+                                    </div>
+
+                                   
+                                
+                                    <div class="col-md-4 col-xs-12">
+                                         <span class="fa fa-building" style="font-size:120px;  background-image:url('IMAGES/Golden.jpg'); background-size:cover;background-repeat:no-repeat;"></span><br>
+                                        <a href="#" style="color:blueviolet;"><span style="font-size:25px; letter-spacing:1px; font-weight:600;">Civil <br>Engineering</span></a>
+                                    </div>
+
+                                    <div class="col-md-4 col-xs-12">
+                                        <div id="ec">
+                                            <img src="{% static 'IMAGES/cpu.png' %}" ><br><br><br><br><br><br>
+                                            <a href="#" style="color:blueviolet"><span style="font-size:25px; letter-spacing:1px; font-weight:600;">E.C. <br>Engineering</span></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--streams ends here-->
+                <div class="clearfix"></div><br><br>
+
+                <!--proceedings starts here-->
+
+                <h2 align="center">Proceedings to know</h2>
+                <hr style="width:22%; border:solid 2px orangered;">
+                <br><br>
+
+                <div id="proceedings">
+                    <div class="col-md-4 col-xs-12" >
+                        <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+                            <img src="{% static 'Images/Graduation.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+                            <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+                                <center>
+                                    <b style="color:orangered; font-size:25px; letter-spacing:1px;">Gradution ceremony 2021 <span class="fa fa-unlink"></span></b><br>
+                                    <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card" ></span><br>Date:<br>Venue:<br>Timings:<br>Details:</b><br>
+                                    <b style="color:orangered; font-size:20px"><span class="fa fa-link"></span><br>Ping: </b>
+                                    <b style="color:yellowgreen; font-size:15px; letter-spacing: 1px;"></b>
+
+                                </center>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+                            <img src="{% static 'IMAGES/brizingr.jpg' %}" style="width:100%; height:250px;" class="img-responsive">
+
+                            <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+                                <center>
+                                    <b style="color:orangered; font-size:25px; letter-spacing:1px;">Brizingr 2021<span class="fa fa-unlink"></span></b><br>
+                                    <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card"></span><br>Date:<br>Venue:<br>Timings:<br>Details:<br></b>
+                                    <b style="color:orangered; font-size:20px; letter-spacing:1px;"><span class="fa fa-link"></span><br>Ping:</b>
+                                    <b style="color:yellowgreen; font-size:15px; letter-spacing:1px;"></b>
+                                </center>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px">
+                            <img src="{% static 'IMAGES/Navratri.jpg' %}" style="width:100%; height:250px;" class="img-responsive">
+                            <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+                                <center>
+                                    <b style="color:orangered; font-size:25px; letter-spacing:1px;">Navaratri 2021<span class="fa fa-unlink"></span></b><br>
+                                    <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card"></span><br>Date:<br>Venue:<br>Timings:<br>Details:<br></b>
+                                    <b style="color:orangered; font-size:20px; letter-spacing:1px; "><span class="fa fa-link"></span><br>Ping:</b>
+                                    <b style="color:yellowgreen; font-size:15px; letter-spacing:1px;"></b>
+                                </center>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+                            <img src="{% static 'IMAGES/Sports week.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+                            <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+                                <center>
+                                    <b style="color:orangered; font-size:25px; letter-spacing:1px;">Sports week 2021<span class="fa fa-unlink"></span></b><br>
+                                    <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card"></span><br>Date:<br>Venue:<br>Timings:<br>Details:<br></b>
+                                    <b style="color:orangered; font-size:20px; letter-spacing:1px;"><span class="fa fa-link"></span><br>Ping:</b>
+                                    <b style="color:yellowgreen; font-size:15px; letter-spacing:1px;"></b>
+                                </center>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+                            <img src="{% static 'IMAGES/Euphoria.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+                            <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+                                <center>
+                                    <b style="color:orangered; font-size:25px; letter-spacing:1px;">Euphoria 2021<span class="fa fa-unlink"></span></b><br>
+                                    <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card"></span><br>Date:<br>Venue:<br>Timings:<br>Details:<br></b>
+                                    <b style="color:orangered; font-size:20px; letter-spacing:1px;"><span class="fa fa-link"></span><br>Ping:</b>
+                                    <b style="color:yellowgreen; font-size:15px; letter-spacing:1px;"></b>
+                                </center>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="thumbnail" style="background-image:url('IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); background-size:cover;background-repeat:no-repeat;width:430px;">
+                            <img src="{% static 'IMAGES/seminar.jpg' %}" class="img-responsive" style="width:100%; height:250px;">
+                            <address style="color:orangered; font-size:15px; letter-spacing:1px;">
+                                <center>
+                                    <b style="color:orangered; font-size:25px; letter-spacing:1px;">Seminar session<span class="fa fa-unlink"></span></b><br>
+                                    <b style="color:blueviolet; font-size:15px; letter-spacing:1px;"><span class="fa fa-address-card"></span><br>Date:<br>Venue:<br>Timings:<br>Details:<br></b>
+                                    <b style="color:orangered; font-size:20px; letter-spacing:1px;"><span class="fa fa-link"></span><br>Ping:</b>
+                                    <b style="color:yellowgreen; font-size:15px; letter-spacing:1px;"></b>
+                                </center>
+                            </address>
+                        </div>
+                    </div>
+                            
+                
+                <!--proceedings ends here-->
+
+        <!--content ends here-->
+
+        
+
+        <!--Account modal starts here-->
+        <div class="modal fade" id="acc" role="dialog">
+            <div class="modal-dialog" style="width:80%;">
+                <div class="modal-content" style="height:600px;">
+                    <div class="col-md-6 col-xs-12" style="background-image:url('Images/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image'); background-size:cover; background-repeat:no-repeat;  height:600px;">
+                        <div id="register">
+                            <h1 style="color:blueviolet; font-weight:800; margin-bottom:8%;"align="center">Register here --!</h1>
+                            <div class="btn-group">
+                                
+                                
+                                <a href="{% url 'register' %}"><button class="btn btn-primary btn-block" data-target="" >Register</button></a>
+                            </div>
+                           <hr style="border:4px solid blueviolet;"><br>
+                           <div id="note">
+                                <b style="color:red; font-size:25px; font-weight:500; padding:10px;">NOTE:-</b><br>
+                                <p style="color:blue; font-size:20px; font-weight:400; padding:10px;">Any info regarding the registration is written here.<br>This is for security reasons and to avoid Redundancy.</p>
+                                    
+                                 
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+                    <div class="col-md-6 col-xs-12" style="background-image:url('Images/Purple.jpg'); background-size:cover ; background-repeat:no-repeat; height:600px;">
+                        <center>
+                            <a href="{% url 'userlogin' %}" class="btn btn-default" style="margin-top:10%; width:420px; height:80px; font-weight:700; font-size:40px; color:purple; border-radius:30px;">Login</a>
+                                
+                        </center>
+                        
+                       
+                    
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Account modal ends here-->
+
+       
+       
+        {% include 'footer.html' %}
+    </body>
+</html>
+{% endblock %}

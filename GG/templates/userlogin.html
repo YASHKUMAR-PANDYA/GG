@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guest Registration</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta property="og:title" content="Guest registration">
+        <meta property="og:description" content="Non-entities of the gecr can register from here">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="#">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/login.css' %}"> 
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/orange.css' %}">
+        <link rel="icon" type="text/icon" media="screen" href="{% static 'images/Gregister/th.jpg' %}">
+
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'Js/Jquery.js' %}"></script>
+        <script src="{% static 'Js/jquery.bvalidator.min.js' %}"></script>
+        <script src="{% static 'Js/orange.js' %}"></script>
+        <script src="{% static 'Js/default.min.js' %}"></script>
+
+
+        <script type="text/javascript">
+            $("document").ready(function(){
+                $("#lfrm").bValidator();
+            });
+        </script>
+
+        
+        
+    </head> 
+    {% block body %}
+
+
+<body>
+    
+    
+
+        
+        
+        <form method="POST" action="#" id="lfrm">
+            {% csrf_token %}
+
+            
+                <center>
+                    <br>
+                    <h4 align="center" style="color:purple; font-size:45px; font-weight:800;">Login </h4>
+                    <hr style="width:80%; border:solid 4px purple;">
+                    
+                        &nbsp;&nbsp;<span class="fa fa-user" style="color:purple; font-size:30px;"></span>
+                        <input type="text" name="leml" placeholder="E-mail" data-bvalidator="required,email"><br><br>
+
+                        <span class="fa fa-key" style="color:purple; font-size:30px;"></span>
+                        <input type="password" name="lpcd" placeholder="passcode" data-bvalidator="required,minlen[5],maxlen[15]"><br><br><br>
+                    
+                        <input class="btn btn-primary" type="submit" value="login"  style="Background-color:purple; color:white; width:125px; height:50px; border:none; font-size:20px;">
+
+                </center><br>
+        </form>   
+       
+
+
+    </body>
+</html>
+{% ifequal error "no" %}
+<script type="text/javascript">
+    alert("You are logged in successfully");
+    window.location="{% url 'portfolio' %}";
+</script>
+{% endifequal %}     
+{% ifequal error "yes" %}
+    <script type="text/javascript">
+        alert("Email and password are incorrect, Please try again!");
+        window.location="{% url 'userlogin' %}";
+    </script>
+{% endifequal %}
+{% endblock %}

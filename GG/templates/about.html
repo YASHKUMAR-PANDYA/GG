@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GECR : Info</title>
+    <meta name="viewport" content="width=device-width inital-scale=1.0">
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="About GECR its establishment and history till date">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="#">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/about.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/bootstrap.css' %}">
+    
+    <script src="{% static 'JS/jquery.js' %}"></script>
+    <script src="{% static 'JS/cycle.min.js' %}"></script>
+
+    <script type="text/javascript">
+        onLoad= alert("Welcome to Gecr Info.");
+        
+    </script>
+    <script src="{% static 'JS/bootstrap.min.js' %}"></script>
+
+    <link rel="icon" type="text/icon" media="screen" href="{% static 'images/About/Icon_2.png' %}">
+
+</head>
+{% block body %}
+<body>
+
+
+ <section class="main">   
+ <center>
+    <div class="header">
+            <br>
+        <h1>Government Engineering College Rajkot</h1>  
+        
+        <hr style="Background-image:url('images/Orange.jpg'); width:60%;border:solid 2px purple;">
+    </div>
+    <div class="clearfix"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'about' %}" class="active" style="color:yellowgreen;"><span style="color:blueviolet; letter-spacing:2px; font-size:20px;">GECR:</span><span style="color:red; letter-spacing:2px; font-size:16px;">The place of</span><span style="color:blueviolet; letter-spacing:2px; font-size:16px;">&nbsp;Purpose</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'index' %}" style="color:yellowgreen;"><span class="fa fa-institution">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">HUB</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="{% url 'activity' %}" style="color:yellowgreen;"><span class="fa fa-suitcase">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Activity</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-hand-o-right">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Trends</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="dropdown"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color:yellowgreen;"><span class="fa fa-film"></span>&nbsp;&nbsp;<span style="color:blueviolet; letter-spacing:1px; font-size:20px;" >Events</span><span class="fa fa-angle-double-down" style="color:yellowgreen;"></span></a>
+                <ul class="dropdown-menu" style="background-image:linear-gradient(to bottom left, yellowgreen, white);">
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Technical Events</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Non-Technical Events</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Public Gatherings</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Meetings</a></li>
+                    <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Schedule</a></li>
+                </ul>
+            
+                
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#" style="color:yellowgreen;"><span class="fa fa-tasks">&nbsp;&nbsp;</span><span style="color:blueviolet; font-size:20px; letter-spacing:1px;">FAQs</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+       </ul>
+    </nav>      
+    <div class="content">
+       
+        <div id="Description">
+            <div id="part">
+                <br>
+                <h4>Esatablishment</h4><br>
+                <p>Government Engineering College, Rajkot (GECR) was established in the year 2004 with a vision to provide
+                technical education to the students to make them technically competent and ethically sound to meet the
+                growing demands of the industries and for benefit of the society as a whole.</p>
+                <p>Government Engineering College, Rajkot is a Government institution affiliated to Gujarat Technological University(GTU)
+                and recognized by All India Council for Technical Education (AICTE), New Delhi. We offer six UG level programmes
+                Electronics & Communication Engineering, Computer Engineering, Instrumentation & Control Engineering, Mechanical Engineering,   
+                Civil Engineering and Automobile Engineering. <p>
+            </div>
+            <div id="part">
+                <h4>Vision</h4><br>
+                <p>To contribute to the nation by providing high quality technical education to bring out technically competent, socially responsible,
+                environment conscious and ethically sound engineers. </p>
+            </div>
+            <div id="part">
+                <h4>Mission</h4><br>
+               <p> To shape our institution to provide high quality technical education to the students, to create vibrant atmosphere to motivate students
+                for learning and to make our institution preferred destination for learners in the field of technical education. </p><br>
+            </div>
+
+
+        </div>
+
+        </div>
+    </div>
+    <div class="clearfix"></div>
+        <div class="footer">
+           
+            <nav class="navbar">
+                <ul>
+                    <li><a href="{% url 'about' %}" class="active" style="color:yellowgreen;"><span style="color:blueviolet; letter-spacing:2px; font-size:20px;">GECR:</span><span style="color:red; letter-spacing:2px; font-size:16px;">The place of</span><span style="color:blueviolet; letter-spacing:2px; font-size:16px;">&nbsp;Purpose</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="{% url 'index' %}" style="color:yellowgreen;"><span class="fa fa-institution">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">HUB</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="{% url 'activity' %}" style="color:yellowgreen;"><span class="fa fa-suitcase">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Activity</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#" style="color:yellowgreen;"><span class="fa fa-hand-o-right">&nbsp;&nbsp;</span><span style="color:blueviolet; letter-spacing:1px; font-size:20px;">Trends</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="dropup"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" style="color:yellowgreen;"><span class="fa fa-film"></span>&nbsp;&nbsp;<span style="color:blueviolet; letter-spacing:1px; font-size:20px;" >Events</span><span class="fa fa-angle-double-up" style="color:yellowgreen;"></span></a>
+                        <ul class="dropdown-menu" style="background-image:linear-gradient(to bottom left, yellowgreen, white);">
+                            <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Technical Events</a></li>
+                            <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Non-Technical Events</a></li>
+                            <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Public Gatherings</a></li>
+                            <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Meetings</a></li>
+                            <li><a style="font-size:20px;font-weight:400;font-style:helvetica;color:purple;"href="#">Schedule</a></li>
+                        </ul>
+                    
+                        
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#" style="color:yellowgreen;"><span class="fa fa-tasks">&nbsp;&nbsp;</span><span style="color:blueviolet; font-size:20px; letter-spacing:1px;">FAQs</span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+               </ul>
+            </nav> 
+           
+            
+        </div>
+    
+</center>
+</section>
+
+</body>
+
+</html>
+{% endblock %}
