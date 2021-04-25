@@ -1,0 +1,36 @@
+body{
+    background-image:url('../images/purple.jpg');
+    background-size:cover ;
+    background-repeat:no-repeat;
+    
+}
+#part{
+    margin-top:7%;
+    margin-left:37%;
+    background-color:white;
+    height:560px;
+    width:400px;
+    opacity:0.8;
+    border-radius:30px;
+}
+#logininput{
+    float:center;
+}
+#logininput input{
+    border:none;
+    border-bottom:solid 4px purple;
+    
+}
+/* #login{
+    width:400px;
+    height:325px;
+    background-color:white;
+    margin-left:15%;
+    margin-top:15%;
+    opacity:0.8;
+    border-radius:30px;
+}
+#login input{
+    border:none;
+    border-bottom:solid 4px purple;
+}    */

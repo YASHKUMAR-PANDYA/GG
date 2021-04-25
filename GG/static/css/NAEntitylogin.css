@@ -1,0 +1,20 @@
+
+body{
+    background-image:url('../IMAGES/purple.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#login{
+    width:450px;
+    height:450px;
+    background-color:white;
+    margin-left:37%;
+    margin-top:10%;
+    opacity:0.8;
+    border-radius:30px;
+}
+#login input{
+    border:none;
+    border-bottom:solid 4px purple;
+    
+}

@@ -1,0 +1,231 @@
+body{
+    background-image:url('../IMAGES/light_blue_gradient.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow-x:hidden;    
+    display:block;
+}
+
+
+.header{
+    width:100%;
+    height:120px;
+    background-image:url("../Images/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#logo img{
+    width:32%;
+    height:70px;
+    margin-top:4%;
+}
+#search-box{
+    width:auto;
+    height:auto;
+    margin-top:6%;
+}
+#search-box input{
+    width:100%;
+    height:40px;
+    border-bottom:solid 8px rgb(0, 0, 129);
+}
+#logreg{
+    margin-top:9%;
+    float:right;
+    font-size:20px;
+    
+}
+#logreg:hover{
+    color:aquamarine;
+    transform:scale(1.1);
+    
+}
+
+#social-media{
+   width:100%;
+   height:90px;
+   background-image:url("../images/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image");
+   background-size:cover;
+   background-repeat:no-repeat;
+   
+}
+.fa-whatsapp,
+.fa-instagram,
+.fa-twitter,
+.fa-google-plus,
+.fa-pinterest-square,
+.fa-facebook{
+    font-size:40px;
+    letter-spacing:5px;
+    color:rgb(0, 0, 129);
+    margin-left:12%;
+    margin-top:0.80%;
+    
+    
+}
+.fa-whatsapp:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-google-plus:hover,
+.fa-pinterest-square:hover,
+.fa-facebook:hover{
+    color:aquamarine;
+    letter-spacing:5px;
+    transition:1s ease all;
+    transform:rotate(360deg);
+}
+.navbar{
+    margin-top:6%;
+    float:right;
+    padding:6px;
+    background-color:lightyellow;
+    
+
+}
+.navbar ul li{
+    display:inline-block;
+    font-weight:400;
+    
+}
+.active{
+    background-image:url("../IMAGES/Golden.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:10px 12px;
+    border-radius:10px;
+}
+
+.slider img{
+ width:1400px;
+ height:500px;
+ margin-top:1%;
+ margin-left:4%;
+ box-shadow:10px 10px 10px orange;
+ 
+}
+.content{
+    
+    margin-top:2%;
+}
+#stream{
+    background-image:url("../IMAGES/Golden.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+h3{
+    font-size:22px;
+    background-image:url("../IMAGES/Golden.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:10px;
+    margin:2%;
+    width:60%;
+    margin-left:20.5%;
+   
+}
+.panel-header{
+    background-image:url('../IMAGES/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Images');
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+}
+
+.panel-body{
+    background-image:url('../IMAGES/Resume\ Color\ Hexagon\ Background\ H5\ Background\ Material'); 
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#auto img{
+    width:120px;
+    height:120px;
+    background-image:url('../IMAGES/Golden.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    float:left;
+}
+#ec img{
+    width:120px;
+    height:120px;
+    background-image:url('../IMAGES/Golden.jpg'); 
+    background-size:cover;
+    background-repeat:no-repeat;
+    float:left;
+}
+#electrical img{
+    width:120px;
+    height:120px;
+    background-image:url('../IMAGES/Golden.jpg'); 
+    background-size:cover;
+    background-repeat:no-repeat;
+    float:left;
+}
+
+#stream2{
+    background-image:url("../IMAGES/Golden.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.thumbanail{
+    background-color:red;
+}
+
+.thumbnail:hover 
+{
+  transform: scale(1.1);
+}
+#register{
+    margin-top:15%;
+}
+#register button{
+    background-color:yellowgreen;
+    width:400px;
+    height:60px;
+    margin-top:20px;
+    margin-left:100px;
+    color:orangered;
+    border:2px solid aquamarine;
+    box-shadow:5px 5px aquamarine;
+    font-size:30px;
+    font-weight:600;
+}
+
+h2{
+    font-size:35px;
+    background-image:url("../IMAGES/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:10px;
+    margin:2%;
+    width:60%;
+    margin-left:20.5%;
+    color:blueviolet;
+    font-weight:800;
+}
+.thumbnail{
+    box-shadow:10px 10px 10px orange;
+    margin:4%;
+}
+#note{
+    width:575px;
+    height:170px;
+    background-color:lightgoldenrodyellow;
+    border-radius:8%;
+}
+
+.btn-group-vertical{
+    margin-left:20%;
+    margin-top:12%;
+}
+.btn-group-vertical button{
+    padding:6px;
+    width:800px;
+    height:100px;
+    background-color:white;
+    color:purple;
+    font-weight:800;
+    font-size:30px;
+    opacity:0.8;
+}

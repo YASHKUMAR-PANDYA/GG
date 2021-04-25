@@ -1,0 +1,54 @@
+body{
+    background-image:url('../IMAGES/light_blue_gradient.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow-x:hidden;    
+    display:block;
+}
+.header{
+    background-image:url('../IMAGES/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image');
+    height:120px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.header h1{
+    color:purple;
+    width:60%;
+    background-image:url('../images/Golden.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-size:40px;
+    padding:10px;
+    border-radius:20px;
+    margin-left:20%;
+    
+}
+.thumbnail{
+    float:left;
+    margin-left:4%;
+    margin-top:4%;
+}
+.navbar ul li{
+    display:inline-block;
+    margin-top:1%;
+    
+ }
+ .navbar{
+     margin-top:6%;
+     float:right;
+     font-weight:400;
+     background-color:lightyellow;
+     margin-top:2%;
+     WIDTH:75%;
+     border-radius:40px;
+ }
+ .active{
+    background-image:url("../IMAGES/Golden.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    PADDING:10px 12px;
+    border-radius:10px;
+ }
+ .thumbnail:hover {
+    transform:scale(1.1);
+ }

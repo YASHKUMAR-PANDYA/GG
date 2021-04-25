@@ -1,0 +1,15 @@
+body{
+    background-image:url('../images/Yellow\ Orange\ Pattern\ –\ Free\ Background\ Image');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#part{
+    margin-top:7%;
+    margin-left:37%;
+    background-color:white;
+    height:560px;
+    width:400px;
+    opacity:0.8;
+    border-radius:30px;
+}
+
